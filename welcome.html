@@ -21,7 +21,12 @@
 				%{content}
 			</div>
 		</template>
-		
+		<template ftm-el="b-utton-l">
+			<div class="long_button" onclick="hover()">
+				<h2>%{name}</h2>
+				%{content}
+			</div>
+		</template>
 			<div class="layout">
 				<t-erm>
 					title:欢迎使用DScriptAPI
@@ -43,6 +48,14 @@
 					name:实现过程
 					content:DScript与Java交互
 				</b-utton>
+				<b-utton-l>
+					name:下载
+					content:下载DScript发行版
+				</b-utton-l>
+				<b-utton-l>
+					name:反馈
+					content:下载DScript发行版
+				</b-utton-l>
 			</div>
 			
 		<script>
