@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="script/sass/shCoreEclipse.css">
+		<title>欢迎</title>
+		<script src="script/fastTemplate.js"></script>
+	</head>
+	<body>
+		
+		<template ftm-el="t-erm" class="bar">
+			<div class="bar">
+				<h1>%{title}</h1>
+				%{content}
+			</div>
+		</template>
+		<template ftm-el="b-utton">
+			<div class="square_button" onclick="hover()">
+				<h2>%{name}</h2>
+				%{content}
+			</div>
+		</template>
+		
+			<div class="layout">
+				<t-erm>
+					title:欢迎使用DScriptAPI
+					content:在这里你可以找到关于DScript的一切
+				</t-erm>
+				<b-utton>
+					name:介绍
+					content:DScript是什么呢？
+				</b-utton>
+				<b-utton>
+					name:教程
+					content:DScript从入门到精通
+				</b-utton>
+				<b-utton>
+					name:开发文档
+					content:DScriptAPI的参考手册
+				</b-utton>
+				<b-utton>
+					name:实现过程
+					content:DScript与Java交互
+				</b-utton>
+			</div>
+			
+		<script>
+			function hover(){
+				
+			}
+		</script>
+	</body>
+</html>
